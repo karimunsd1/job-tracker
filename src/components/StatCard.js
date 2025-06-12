@@ -1,6 +1,6 @@
 "use client";
 
-export default function StatCard({ title, value, subtitle }) {
+const StatCard = ({ title, value, subtitle }) => {
     return (
         <div className="p-4 rounded-lg shadow-sm bg-white border">
             <h2 className="text-sm text-gray-500 font-medium mb-1">{title}</h2>
@@ -8,4 +8,6 @@ export default function StatCard({ title, value, subtitle }) {
             <p className="text-sm text-gray-400">{subtitle}</p>
         </div>
     );
-}
+};
+
+export default StatCard;

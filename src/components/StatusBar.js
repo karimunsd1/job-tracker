@@ -1,4 +1,4 @@
-import { Progress } from "@/components/ui/progress";
+import { Progress } from "./ui/progress.jsx";
 
 export default function StatusBar({ title, data }) {
     const total = Object.values(data).reduce((sum, val) => sum + val, 0);

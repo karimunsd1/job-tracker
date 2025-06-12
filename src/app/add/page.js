@@ -2,7 +2,7 @@
 
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectItem } from "@/components/ui/select";
+import { Select, SelectItem, SelectContent } from "@/components/ui/select";
 import { Calendar } from "@/components/ui/calendar";
 import { Button } from "@/components/ui/button";
 import { CalendarIcon } from "lucide-react";
@@ -84,18 +84,22 @@ export default function AddApplicationPage() {
                 <div>
                     <label className="font-medium">Status</label>
                     <Select defaultValue="Applied">
-                        <SelectItem value="Applied">Applied</SelectItem>
-                        <SelectItem value="Interviewing">Interviewing</SelectItem>
-                        <SelectItem value="Offer">Offer</SelectItem>
-                        <SelectItem value="Rejected">Rejected</SelectItem>
+                        <SelectContent>
+                            <SelectItem value="Applied">Applied</SelectItem>
+                            <SelectItem value="Interviewing">Interviewing</SelectItem>
+                            <SelectItem value="Offer">Offer</SelectItem>
+                            <SelectItem value="Rejected">Rejected</SelectItem>
+                        </SelectContent>
                     </Select>
                 </div>
                 <div>
                     <label className="font-medium">Priority</label>
                     <Select value={priority} onValueChange={setPriority}>
-                        <SelectItem value="Low">Low</SelectItem>
-                        <SelectItem value="Medium">Medium</SelectItem>
-                        <SelectItem value="High">High</SelectItem>
+                        <SelectContent>
+                            <SelectItem value="Low">Low</SelectItem>
+                            <SelectItem value="Medium">Medium</SelectItem>
+                            <SelectItem value="High">High</SelectItem>
+                        </SelectContent>
                     </Select>
                 </div>
                 <div className="md:col-span-2">

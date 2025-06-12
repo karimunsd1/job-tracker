@@ -1,9 +1,9 @@
 "use client";
-import { useJobStore } from "@/store/jobStore";
-import { Button } from "@/components/ui/button";
+import { useJobStore } from "../store/jobStore";
+import { Button } from "../components/ui/button.jsx";
 import Link from "next/link";
-import StatusBar from "@/components/StatusBar";
-import StatCard from "@/components/StatCard";
+import StatusBar from "../components/StatusBar";
+import StatCard from "../components/StatCard";
 
 export default function Dashboard() {
   const { jobs } = useJobStore();
