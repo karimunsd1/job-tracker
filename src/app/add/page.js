@@ -82,7 +82,7 @@ export default function AddApplicationPage() {
           className="grid grid-cols-1 md:grid-cols-2 gap-6"
           onSubmit={handleSubmit}
         >
-          {/* Company */}
+
           <div>
             <label className="font-medium text-sm text-gray-700 dark:text-gray-300">
               Company *
@@ -90,7 +90,7 @@ export default function AddApplicationPage() {
             <Input placeholder="e.g. Google, Microsoft" />
           </div>
 
-          {/* Position */}
+
           <div>
             <label className="font-medium text-sm text-gray-700 dark:text-gray-300">
               Position *
@@ -98,7 +98,7 @@ export default function AddApplicationPage() {
             <Input placeholder="e.g. Frontend Developer" />
           </div>
 
-          {/* Location */}
+
           <div>
             <label className="font-medium text-sm text-gray-700 dark:text-gray-300">
               Location
@@ -106,7 +106,7 @@ export default function AddApplicationPage() {
             <Input placeholder="e.g. Bengaluru, Remote" />
           </div>
 
-          {/* Salary */}
+
           <div>
             <label className="font-medium text-sm text-gray-700 dark:text-gray-300">
               Salary Range
@@ -114,7 +114,7 @@ export default function AddApplicationPage() {
             <Input placeholder="e.g. ₹10L - ₹25L" />
           </div>
 
-          {/* Status */}
+
           <div>
             <label className="font-medium text-sm text-gray-700 dark:text-gray-300">
               Status
@@ -129,7 +129,7 @@ export default function AddApplicationPage() {
             </Select>
           </div>
 
-          {/* Priority */}
+
           <div>
             <label className="font-medium text-sm text-gray-700 dark:text-gray-300">
               Priority
@@ -143,7 +143,7 @@ export default function AddApplicationPage() {
             </Select>
           </div>
 
-          {/* Date Picker */}
+
           <div className="md:col-span-2">
             <label className="font-medium text-sm text-gray-700 dark:text-gray-300">
               Applied Date

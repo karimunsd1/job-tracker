@@ -85,7 +85,7 @@ export default function ApplicationsPage() {
               </SelectContent>
             </Select>
           </div>
-          <Link href='/add' className="ml-auto bg-gradient-to-r from-indigo-500 to-purple-600 text-white hover:from-indigo-600 hover:to-purple-700">
+          <Link href='/add' className="ml-auto bg-gradient-to-r from-indigo-500 to-purple-600 text-white hover:from-indigo-600 hover:to-purple-700 rounded-full py-2 px-2">
             + Add Application
           </Link>
         </div>
