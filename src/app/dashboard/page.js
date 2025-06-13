@@ -1,9 +1,9 @@
 "use client";
-import { useJobStore } from "../store/jobStore";
-import { Button } from "../components/ui/button.jsx";
+import { useJobStore } from "@/store/jobStore";
+import { Button } from "@/components/ui/button.jsx";
+import StatusBar from "@/components/StatusBar";
+import StatCard from "@/components/StatCard";
 import Link from "next/link";
-import StatusBar from "../components/StatusBar";
-import StatCard from "../components/StatCard";
 
 export default function Dashboard() {
     const { jobs } = useJobStore();
@@ -27,7 +27,7 @@ export default function Dashboard() {
     };
 
     return (
-        
+
         <main className="max-w-6xl mx-auto p-6 space-y-8">
             <div>
                 <h1 className="text-3xl font-bold flex items-center gap-2">
