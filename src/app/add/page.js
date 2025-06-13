@@ -51,7 +51,7 @@ export default function AddApplicationPage() {
   }
 
   const handleApply = () => {
-    router.push('/applications');
+    router.push('/');
   };
   const handleBack = () => {
     router.back();
