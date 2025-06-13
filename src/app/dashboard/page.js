@@ -27,6 +27,7 @@ export default function Dashboard() {
     };
 
     return (
+        
         <main className="max-w-6xl mx-auto p-6 space-y-8">
             <div>
                 <h1 className="text-3xl font-bold flex items-center gap-2">
