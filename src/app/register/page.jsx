@@ -38,7 +38,7 @@ export default function Register() {
         </h1>
 
         <form onSubmit={handleSubmit(submitForm)} className="flex flex-col gap-6">
-          {/* Email Field */}
+       
           <div className="relative">
             <input
               {...register('email')}
@@ -53,7 +53,7 @@ export default function Register() {
             )}
           </div>
 
-          {/* Password Field */}
+        
           <div className="relative">
             <input
               {...register('password')}
@@ -68,7 +68,7 @@ export default function Register() {
             )}
           </div>
 
-          {/* Confirm Password Field */}
+          
           <div className="relative">
             <input
               {...register('cnfPassword')}
@@ -83,7 +83,7 @@ export default function Register() {
             )}
           </div>
 
-          {/* Submit Button */}
+         
           <button
             type="submit"
             className="mt-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-3 rounded-xl font-semibold hover:from-indigo-600 hover:to-purple-700 shadow-lg transition duration-300"
@@ -92,7 +92,7 @@ export default function Register() {
           </button>
         </form>
 
-        {/* Login Link */}
+     
         <p className="text-center text-gray-700 dark:text-gray-300 mt-8 text-sm">
           Already have an account?{' '}
           <a

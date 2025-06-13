@@ -11,10 +11,15 @@ import { useJobStore } from "../store/jobStore";
 import StatusBar from "../components/StatusBar";
 import StatCard from "../components/StatCard";
 
+import { useSearchParams } from "next/navigation";
+
 export default function Home() {
   const router = useRouter();
   const { jobs } = useJobStore();
   const [isLogin, setIsLogin] = useState(false);
+
+  const searchParams = useSearchParams();
+  const name = searchParams.get("name") || "Guest";
 
   
   useEffect(() => {
@@ -41,6 +46,10 @@ export default function Home() {
     Medium: jobs.filter((j) => j.priority === "Medium").length,
     Low: jobs.filter((j) => j.priority === "Low").length,
   };
+
+  const handlePush = () => {
+    router.push("/login");
+  }
 
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-gray-900 dark:to-gray-800 text-gray-900 dark:text-gray-100">
@@ -92,9 +101,19 @@ export default function Home() {
           </footer>
         </main>
       ) : (
-        <div className="flex justify-center items-center h-screen">
-          <h1 className="text-2xl font-semibold">Please Login</h1>
+        <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-indigo-100 to-blue-200 dark:from-gray-900 dark:to-gray-800">
+        <div className="bg-white dark:bg-gray-900 shadow-xl rounded-2xl p-8 max-w-md w-full border dark:border-gray-700 text-center space-y-6">
+          <h1 className="text-4xl font-extrabold text-gray-800 dark:text-white">
+            👋 Hello, {name}
+          </h1>
+          <p className="text-gray-600 dark:text-gray-300 text-lg">
+            You need to <span className="font-semibold text-indigo-600 dark:text-indigo-400">log in</span> to access this premium feature.
+          </p>
+          <button onClick={handlePush} className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2 rounded-lg transition">
+            🔐 Login to Continue
+          </button>
         </div>
+      </div>
       )}
     </div>
   );

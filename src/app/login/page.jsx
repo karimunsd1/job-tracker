@@ -41,7 +41,7 @@ export default function Login() {
         </h1>
 
         <form onSubmit={handleSubmit(submitForm)} className="flex flex-col gap-5">
-          {/* Email Field */}
+          
           <div className="relative">
             <input
               {...register('email')}
@@ -56,7 +56,7 @@ export default function Login() {
             )}
           </div>
 
-          {/* Password Field */}
+         
           <div className="relative">
             <input
               {...register('password')}
@@ -71,7 +71,7 @@ export default function Login() {
             )}
           </div>
 
-          {/* Submit Button */}
+     
           <button
             type="submit"
             className="mt-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-3 rounded-xl font-semibold hover:from-indigo-600 hover:to-purple-700 shadow-lg transition duration-300"
@@ -80,7 +80,7 @@ export default function Login() {
           </button>
         </form>
 
-        {/* Register Link */}
+        
         <p className="text-center text-gray-700 dark:text-gray-300 mt-8 text-sm">
           Don&apos;t have an account?{' '}
           <Link
